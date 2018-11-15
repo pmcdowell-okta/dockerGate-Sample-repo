@@ -15,5 +15,9 @@ clean:
 	rm -rf node_modules
 
 dockertest:
-	sls offline start
+	make setup
+	make build
+	make run
+
+
 
